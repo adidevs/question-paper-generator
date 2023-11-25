@@ -1,0 +1,28 @@
+
+    [
+      {"question": "What is the speed of light", "subject": "Physics", "topic": "Waves", "difficulty": "Easy", "marks": 5},
+      {"question": "Explain the concept of gravity", "subject": "Physics", "topic": "General Physics", "difficulty": "Easy", "marks": 4},
+      {"question": "Define inertia", "subject": "Physics", "topic": "Classical Mechanics", "difficulty": "Easy", "marks": 3},
+      {"question": "What is the formula for force?", "subject": "Physics", "topic": "Newtonian Mechanics", "difficulty": "Easy", "marks": 2},
+      {"question": "State the first law of thermodynamics", "subject": "Physics", "topic": "Thermodynamics", "difficulty": "Easy", "marks": 6},
+      {"question": "What is the unit of electric charge?", "subject": "Physics", "topic": "Electromagnetism", "difficulty": "Easy", "marks": 3},
+      {"question": "Define photosynthesis", "subject": "Biology", "topic": "Cell Biology", "difficulty": "Easy", "marks": 5},
+      {"question": "What is the structure of a DNA molecule?", "subject": "Biology", "topic": "Genetics", "difficulty": "Easy", "marks": 4},
+      {"question": "Name the largest planet in our solar system", "subject": "Astronomy", "topic": "Planets", "difficulty": "Easy", "marks": 3},
+      {"question": "Define the term 'latitude'", "subject": "Geography", "topic": "Physical Geography", "difficulty": "Easy", "marks": 2},
+      {"question": "Who wrote 'Romeo and Juliet'?", "subject": "Literature", "topic": "Drama", "difficulty": "Easy", "marks": 4},
+      {"question": "What is the capital of France?", "subject": "Geography", "topic": "Countries", "difficulty": "Easy", "marks": 3},
+      {"question": "Name the process of converting water vapor to liquid water", "subject": "Physics", "topic": "States of Matter", "difficulty": "Easy", "marks": 5},
+      {"question": "Define velocity", "subject": "Physics", "topic": "Kinematics", "difficulty": "Easy", "marks": 2},
+      {"question": "Who discovered penicillin?", "subject": "Biology", "topic": "Microbiology", "difficulty": "Easy", "marks": 6},
+      {"question": "What is the chemical symbol for gold?", "subject": "Chemistry", "topic": "Elements", "difficulty": "Easy", "marks": 3},
+      {"question": "Name the largest ocean on Earth", "subject": "Geography", "topic": "Oceans", "difficulty": "Easy", "marks": 4},
+      {"question": "What is the capital of Japan?", "subject": "Geography", "topic": "Countries", "difficulty": "Easy", "marks": 2},
+      {"question": "Define frequency in physics", "subject": "Physics", "topic": "Waves", "difficulty": "Easy", "marks": 3},
+      {"question": "Who wrote 'To Kill a Mockingbird'?", "subject": "Literature", "topic": "Fiction", "difficulty": "Easy", "marks": 5},
+      {"question": "What is the formula for the area of a circle?", "subject": "Mathematics", "topic": "Geometry", "difficulty": "Easy", "marks": 4},
+      {"question": "Name the third planet from the sun", "subject": "Astronomy", "topic": "Planets", "difficulty": "Easy", "marks": 3},
+      {"question": "Define precipitation in weather terms", "subject": "Geography", "topic": "Meteorology", "difficulty": "Easy", "marks": 2},
+      {"question": "Who is known as the 'Father of Computers'?", "subject": "Computer Science", "topic": "History of Computers", "difficulty": "Easy", "marks": 6}
+    ]
+  

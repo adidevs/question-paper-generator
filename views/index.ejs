@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Question Paper Generator</title>
+</head>
+
+<body>
+    <h1>Question Paper Generator</h1>
+    <form action="/" method="post">
+        <div class="form-item">
+            <label for="marks">Marks</label>
+            <input type="number" name="marks" id="marks" required><br>
+        </div>
+        <div class="form-item">
+            <label for="easy">Easy</label>
+            <input type="number" name="easy" id="easy" required><br>
+        </div>
+        <div class="form-item">
+            <label for="medium">Medium</label>
+            <input type="number" name="medium" id="medium" required><br>
+        </div>
+        <div class="form-item">
+            <label for="hard">Hard</label>
+            <input type="number" name="hard" id="hard" required><br>
+        </div>
+        <div class="form-submit">
+            <input id="submit" class="submit" type="submit" value="Submit">
+        </div>
+    </form>
+    <!-- Display list of questions -->
+    <div id="result-container"></div>
+</body>
+<script>
+    //to check if the sum of easy, medium and hard is 100
+    const marks = document.getElementById('marks');
+    const easy = document.getElementById('easy');
+    const medium = document.getElementById('medium');
+    const hard = document.getElementById('hard');
+    const submit = document.getElementById('submit');
+    const resultContainer = document.getElementById('result-container');
+
+    let questions = [];
+
+    submit.addEventListener('click', async (e) => {
+
+        questions = [];
+
+        e.preventDefault();
+        if (parseInt(easy.value) + parseInt(medium.value) + parseInt(hard.value) != 100) {
+            alert("Sum of easy, medium and hard should be 100");
+        } else {
+            resultContainer.innerHTML = '';
+            try {
+                const response = await fetch('/', {
+                    method: 'POST',
+                    body: new URLSearchParams({
+                        marks: marks.value,
+                        easy: easy.value,
+                        medium: medium.value,
+                        hard: hard.value
+                    }),
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    }
+                });
+                const data = await response.json();
+                console.log(data);
+                questions = data;
+
+                // Create an ordered list (ol) to display the questions
+                const ol = document.createElement('ol');
+
+                // Iterate over the questions and create list items (li) for each question
+                questions.forEach(question => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+        <strong>Question:</strong> ${question.question}<br>
+        <strong>Subject:</strong> ${question.subject}<br>
+        <strong>Topic:</strong> ${question.topic}<br>
+        <strong>Difficulty:</strong> ${question.difficulty}<br>
+        <strong>Marks:</strong> ${question.marks}<br>
+        <hr>`;
+                    ol.appendChild(li);
+                });
+                // Append the unordered list to the result container
+                resultContainer.appendChild(ol);
+
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
+
+    });
+</script>
+
+</html>
