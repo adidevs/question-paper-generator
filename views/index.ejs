@@ -34,6 +34,7 @@
     </form>
     <!-- Display list of questions -->
     <div id="result-container"></div>
+    <button id="downloadBtn" style="display: none;">Download Questions</button>
 </body>
 <script>
     //to check if the sum of easy, medium and hard is 100
@@ -48,9 +49,16 @@
 
     submit.addEventListener('click', async (e) => {
 
+
         questions = [];
 
         e.preventDefault();
+        console.log(new URLSearchParams({
+                        marks: marks.value,
+                        easy: easy.value,
+                        medium: medium.value,
+                        hard: hard.value
+                    }))
         if (parseInt(easy.value) + parseInt(medium.value) + parseInt(hard.value) != 100) {
             alert("Sum of easy, medium and hard should be 100");
         } else {
@@ -58,14 +66,14 @@
             try {
                 const response = await fetch('/', {
                     method: 'POST',
-                    body: new URLSearchParams({
+                    body: JSON.stringify({
                         marks: marks.value,
                         easy: easy.value,
                         medium: medium.value,
                         hard: hard.value
                     }),
                     headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
+                        'Content-Type': 'application/json'
                     }
                 });
                 const data = await response.json();
@@ -79,16 +87,19 @@
                 questions.forEach(question => {
                     const li = document.createElement('li');
                     li.innerHTML = `
-        <strong>Question:</strong> ${question.question}<br>
-        <strong>Subject:</strong> ${question.subject}<br>
-        <strong>Topic:</strong> ${question.topic}<br>
-        <strong>Difficulty:</strong> ${question.difficulty}<br>
-        <strong>Marks:</strong> ${question.marks}<br>
-        <hr>`;
+                            <strong>Question:</strong> ${question.question}<br>
+                            <strong>Subject:</strong> ${question.subject}<br>
+                            <strong>Topic:</strong> ${question.topic}<br>
+                            <strong>Difficulty:</strong> ${question.difficulty}<br>
+                            <strong>Marks:</strong> ${question.marks}<br>
+                            <hr>`;
                     ol.appendChild(li);
                 });
                 // Append the unordered list to the result container
                 resultContainer.appendChild(ol);
+
+                // Show the download button
+                downloadBtn.style.display = 'block';
 
             }
             catch (err) {
@@ -96,6 +107,32 @@
             }
         }
 
+    });
+
+    downloadBtn.addEventListener('click', async () => {
+        console.log(questions);
+        try {
+            const response = await fetch('/download', {
+                method: 'POST',
+                body: JSON.stringify({questions}),
+                headers: {
+                        'Content-Type': 'application/json'
+                    }
+            });
+
+            // Check if the response is successful before initiating the download
+            if (response.ok) {
+                const blob = await response.blob();
+                const link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = 'questions.docx';
+                link.click();
+            } else {
+                console.error('Failed to fetch questions for download');
+            }
+        } catch (error) {
+            console.error(error);
+        }
     });
 </script>
 
