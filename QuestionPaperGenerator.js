@@ -20,9 +20,13 @@ const questionPaperGenerator = (requirement) => {
     const mediumPercentage = requirement.medium;
     const hardPercentage = requirement.hard;
 
-    const easyCount = Math.round((easyPercentage / 100) * totalMarks);
-    const mediumCount = Math.round((mediumPercentage / 100) * totalMarks);
-    const hardCount = Math.round((hardPercentage / 100) * totalMarks);
+    const easyMarks = Math.round((easyPercentage / 100) * totalMarks);
+    const mediumMarks = Math.round((mediumPercentage / 100) * totalMarks);
+    const hardMarks = Math.round((hardPercentage / 100) * totalMarks);
+
+    const easyCount = Math.round(easyMarks / 5);
+    const mediumCount = Math.round(mediumMarks / 10);
+    const hardCount = Math.round(hardMarks / 15);
 
     const easyQuestions = filterQuestions("Easy", easyCount);
     const mediumQuestions = filterQuestions("Medium", mediumCount);

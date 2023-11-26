@@ -1,28 +1,611 @@
-
-    [
-      {"question": "What is the speed of light", "subject": "Physics", "topic": "Waves", "difficulty": "Easy", "marks": 5},
-      {"question": "Explain the concept of gravity", "subject": "Physics", "topic": "General Physics", "difficulty": "Easy", "marks": 4},
-      {"question": "Define inertia", "subject": "Physics", "topic": "Classical Mechanics", "difficulty": "Easy", "marks": 3},
-      {"question": "What is the formula for force?", "subject": "Physics", "topic": "Newtonian Mechanics", "difficulty": "Easy", "marks": 2},
-      {"question": "State the first law of thermodynamics", "subject": "Physics", "topic": "Thermodynamics", "difficulty": "Easy", "marks": 6},
-      {"question": "What is the unit of electric charge?", "subject": "Physics", "topic": "Electromagnetism", "difficulty": "Easy", "marks": 3},
-      {"question": "Define photosynthesis", "subject": "Biology", "topic": "Cell Biology", "difficulty": "Easy", "marks": 5},
-      {"question": "What is the structure of a DNA molecule?", "subject": "Biology", "topic": "Genetics", "difficulty": "Easy", "marks": 4},
-      {"question": "Name the largest planet in our solar system", "subject": "Astronomy", "topic": "Planets", "difficulty": "Easy", "marks": 3},
-      {"question": "Define the term 'latitude'", "subject": "Geography", "topic": "Physical Geography", "difficulty": "Easy", "marks": 2},
-      {"question": "Who wrote 'Romeo and Juliet'?", "subject": "Literature", "topic": "Drama", "difficulty": "Easy", "marks": 4},
-      {"question": "What is the capital of France?", "subject": "Geography", "topic": "Countries", "difficulty": "Easy", "marks": 3},
-      {"question": "Name the process of converting water vapor to liquid water", "subject": "Physics", "topic": "States of Matter", "difficulty": "Easy", "marks": 5},
-      {"question": "Define velocity", "subject": "Physics", "topic": "Kinematics", "difficulty": "Easy", "marks": 2},
-      {"question": "Who discovered penicillin?", "subject": "Biology", "topic": "Microbiology", "difficulty": "Easy", "marks": 6},
-      {"question": "What is the chemical symbol for gold?", "subject": "Chemistry", "topic": "Elements", "difficulty": "Easy", "marks": 3},
-      {"question": "Name the largest ocean on Earth", "subject": "Geography", "topic": "Oceans", "difficulty": "Easy", "marks": 4},
-      {"question": "What is the capital of Japan?", "subject": "Geography", "topic": "Countries", "difficulty": "Easy", "marks": 2},
-      {"question": "Define frequency in physics", "subject": "Physics", "topic": "Waves", "difficulty": "Easy", "marks": 3},
-      {"question": "Who wrote 'To Kill a Mockingbird'?", "subject": "Literature", "topic": "Fiction", "difficulty": "Easy", "marks": 5},
-      {"question": "What is the formula for the area of a circle?", "subject": "Mathematics", "topic": "Geometry", "difficulty": "Easy", "marks": 4},
-      {"question": "Name the third planet from the sun", "subject": "Astronomy", "topic": "Planets", "difficulty": "Easy", "marks": 3},
-      {"question": "Define precipitation in weather terms", "subject": "Geography", "topic": "Meteorology", "difficulty": "Easy", "marks": 2},
-      {"question": "Who is known as the 'Father of Computers'?", "subject": "Computer Science", "topic": "History of Computers", "difficulty": "Easy", "marks": 6}
-    ]
-  
+[
+  {
+    "question": "What is the speed of light",
+    "subject": "Physics",
+    "topic": "Waves",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Explain the concept of gravity",
+    "subject": "Physics",
+    "topic": "General Physics",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Name the process of converting water vapor to liquid water",
+    "subject": "Physics",
+    "topic": "States of Matter",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "subject": "Biology",
+    "topic": "Microbiology",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Define photosynthesis",
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the formula for force?",
+    "subject": "Physics",
+    "topic": "Newtonian Mechanics",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the capital of France?",
+    "subject": "Geography",
+    "topic": "Countries",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Define velocity",
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Name the largest ocean on Earth",
+    "subject": "Geography",
+    "topic": "Oceans",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Define frequency in physics",
+    "subject": "Physics",
+    "topic": "Waves",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who is known as the 'Father of Computers'?",
+    "subject": "Computer Science",
+    "topic": "History of Computers",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the structure of a DNA molecule?",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "subject": "Chemistry",
+    "topic": "Elements",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Define inertia",
+    "subject": "Physics",
+    "topic": "Classical Mechanics",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "subject": "Literature",
+    "topic": "Fiction",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Name the largest planet in our solar system",
+    "subject": "Astronomy",
+    "topic": "Planets",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the formula for the area of a circle?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Define the term 'latitude'",
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "State the first law of thermodynamics",
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Name the third planet from the sun",
+    "subject": "Astronomy",
+    "topic": "Planets",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the unit of electric charge?",
+    "subject": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "Define precipitation in weather terms",
+    "subject": "Geography",
+    "topic": "Meteorology",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "subject": "Geography",
+    "topic": "Countries",
+    "difficulty": "Easy",
+    "marks": 5
+  },
+  {
+    "question": "What is the speed of light",
+    "subject": "Physics",
+    "topic": "Waves",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Explain the concept of gravity",
+    "subject": "Physics",
+    "topic": "General Physics",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Name the process of converting water vapor to liquid water",
+    "subject": "Physics",
+    "topic": "States of Matter",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "subject": "Biology",
+    "topic": "Microbiology",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Define photosynthesis",
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "What is the formula for force?",
+    "subject": "Physics",
+    "topic": "Newtonian Mechanics",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "What is the capital of France?",
+    "subject": "Geography",
+    "topic": "Countries",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Define velocity",
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Name the largest ocean on Earth",
+    "subject": "Geography",
+    "topic": "Oceans",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Define frequency in physics",
+    "subject": "Physics",
+    "topic": "Waves",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Who is known as the 'Father of Computers'?",
+    "subject": "Computer Science",
+    "topic": "History of Computers",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "What is the structure of a DNA molecule?",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "subject": "Chemistry",
+    "topic": "Elements",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Define inertia",
+    "subject": "Physics",
+    "topic": "Classical Mechanics",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Who wrote 'To Kill a Mockingbird'?",
+    "subject": "Literature",
+    "topic": "Fiction",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Name the largest planet in our solar system",
+    "subject": "Astronomy",
+    "topic": "Planets",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "What is the formula for the area of a circle?",
+    "subject": "Mathematics",
+    "topic": "Geometry",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Define the term 'latitude'",
+    "subject": "Geography",
+    "topic": "Physical Geography",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "State the first law of thermodynamics",
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Name the third planet from the sun",
+    "subject": "Astronomy",
+    "topic": "Planets",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "What is the unit of electric charge?",
+    "subject": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Define precipitation in weather terms",
+    "subject": "Geography",
+    "topic": "Meteorology",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "What is the capital of Japan?",
+    "subject": "Geography",
+    "topic": "Countries",
+    "difficulty": "Easy",
+    "marks": 10
+  },
+  {
+    "question": "Derive the equations of motion for a projectile",
+    "subject": "Physics",
+    "topic": "Projectile Motion",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the role of mitochondria in cellular energy production",
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Solve the system of differential equations dy/dx = 2x and d^2y/dx^2 = 2",
+    "subject": "Mathematics",
+    "topic": "Differential Equations",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the impact of artificial intelligence on the job market",
+    "subject": "Computer Science",
+    "topic": "Artificial Intelligence",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the role of the World Health Organization in global health",
+    "subject": "Public Health",
+    "topic": "Global Health Organizations",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Evaluate the impact of the Industrial Revolution on social structures",
+    "subject": "History",
+    "topic": "Industrial Revolution",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the principles of game theory in economics",
+    "subject": "Economics",
+    "topic": "Game Theory",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Discuss the impact of climate change on Arctic ecosystems",
+    "subject": "Environmental Science",
+    "topic": "Arctic Ecology",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the historical development of the European Union",
+    "subject": "Political Science",
+    "topic": "European Politics",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the process of gene editing using CRISPR technology",
+    "subject": "Genetics",
+    "topic": "CRISPR Technology",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Evaluate the impact of the Green Revolution on agriculture",
+    "subject": "Agricultural Science",
+    "topic": "Green Revolution",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Discuss the ethical implications of human cloning",
+    "subject": "Ethics",
+    "topic": "Bioethics",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the political theories of Karl Marx",
+    "subject": "Political Science",
+    "topic": "Marxist Political Thought",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the impact of colonialism on indigenous knowledge systems",
+    "subject": "Anthropology",
+    "topic": "Colonialism and Indigenous Cultures",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Evaluate the role of women in the scientific revolution",
+    "subject": "History",
+    "topic": "Scientific Revolution",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Discuss the principles of quantum entanglement",
+    "subject": "Physics",
+    "topic": "Quantum Mechanics",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the impact of the Renaissance on art and culture",
+    "subject": "Art History",
+    "topic": "Renaissance Art",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Evaluate the causes and consequences of the Dust Bowl",
+    "subject": "Environmental Science",
+    "topic": "Dust Bowl",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the impact of artificial intelligence on cybersecurity",
+    "subject": "Cybersecurity",
+    "topic": "AI in Cybersecurity",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Discuss the principles of existentialist philosophy",
+    "subject": "Philosophy",
+    "topic": "Existentialism",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the impact of the Civil Rights Movement on American society",
+    "subject": "History",
+    "topic": "Civil Rights Movement",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Evaluate the role of the International Monetary Fund in the global economy",
+    "subject": "Economics",
+    "topic": "International Finance",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the principles of chaos theory in mathematics",
+    "subject": "Mathematics",
+    "topic": "Chaos Theory",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Discuss the impact of globalization on cultural diversity",
+    "subject": "Sociology",
+    "topic": "Globalization and Culture",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the role of the United Nations in peacekeeping missions",
+    "subject": "International Relations",
+    "topic": "UN Peacekeeping",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Evaluate the causes and consequences of the Opium Wars",
+    "subject": "History",
+    "topic": "Opium Wars",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the principles of neural networks in machine learning",
+    "subject": "Computer Science",
+    "topic": "Neural Networks",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Discuss the impact of deforestation on biodiversity",
+    "subject": "Environmental Science",
+    "topic": "Deforestation",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the role of the World Trade Organization in international trade",
+    "subject": "Economics",
+    "topic": "WTO",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Evaluate the impact of the Cold War on global politics",
+    "subject": "Political Science",
+    "topic": "Cold War",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the process of protein synthesis in cells",
+    "subject": "Biology",
+    "topic": "Cellular Processes",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Discuss the principles of sustainable urban planning",
+    "subject": "Urban Studies",
+    "topic": "Sustainable Urban Development",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the impact of the Internet of Things on daily life",
+    "subject": "Technology",
+    "topic": "IoT",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Evaluate the causes and consequences of the Great Fire of London",
+    "subject": "History",
+    "topic": "Great Fire of London",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the role of epigenetics in gene expression",
+    "subject": "Genetics",
+    "topic": "Epigenetics",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Discuss the principles of quantum computing",
+    "subject": "Computer Science",
+    "topic": "Quantum Computing",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the impact of the Black Death on medieval Europe",
+    "subject": "History",
+    "topic": "Black Death",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Evaluate the causes and consequences of the French and Indian War",
+    "subject": "History",
+    "topic": "French and Indian War",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Examine the principles of genetic engineering",
+    "subject": "Genetics",
+    "topic": "Genetic Engineering",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Discuss the impact of renewable energy sources on the environment",
+    "subject": "Environmental Science",
+    "topic": "Renewable Energy",
+    "difficulty": "Hard",
+    "marks": 15
+  },
+  {
+    "question": "Analyze the role of the World Bank in global development",
+    "subject": "Economics",
+    "topic": "World Bank",
+    "difficulty": "Hard",
+    "marks": 15
+  }
+]
