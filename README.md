@@ -15,7 +15,7 @@ The frontend is written in HTML, CSS and JavaScript and EJS as templating engine
 
 The backend is written in JavaScript and uses the NodeJS framework. The backend is responsible for generating the question paper based on the input from the user.
 
-The project is hosted on Render and can be accessed at [Question Paper Generator](https://questions-generator.onrender.com/).
+The project is hosted on Render and please note that the site is hosted using Render and the server shuts down after 10 minutes of last request, so may take time to load initially. It can be accessed at [Question Paper Generator](https://questions-generator.onrender.com/).
 
 ## How to run the project
 The project can be run locally by cloning the repository and running the following commands in the terminal:
