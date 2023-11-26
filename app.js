@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 );
 
 app.post('/', (req, res) => {
-    console.log(req.body);
     const questions = questionPaperGenerator(req.body);
     res.json(questions);
 }
@@ -24,7 +23,6 @@ app.post('/', (req, res) => {
 app.post('/download', async (req, res) => {
     
     const questions = req.body.questions;
-    console.log(questions);
 
     const fileBuffer = await downloader(questions);
 
@@ -38,13 +36,11 @@ app.post('/download', async (req, res) => {
 
     // Send the buffer as the response
     res.send(fileBuffer);
-
-    //Delete the file from the server after downloading
     
 });
 
-app.listen(3000, () => {
-    console.log('Example app listening on port 3000!');
+app.listen(process.env.PORT || 3000, () => {
+    console.log('Question Paper Generator listening!');
 }
 );
 
